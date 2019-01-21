@@ -64,7 +64,7 @@ def set_selenium_local_session(proxy_address,
                                     options=firefox_options)
 
     else:
-        chromedriver_location = os.path.join(BASE_DIR, '.chromedriver/bin', 'chromedriver')
+        chromedriver_location = os.path.join(BASE_DIR, 'chromedriver_binary', 'chromedriver')
         chrome_options = Options()
         chrome_options.add_argument("--mute-audio")
         chrome_options.add_argument('--dns-prefetch-disable')
